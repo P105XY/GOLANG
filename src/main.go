@@ -7,7 +7,12 @@ import (
 )
 
 func main() {
-	mdic := MyDict.Dictionary{}
-	mdic["Hello"] = "HELLLO"
-	fmt.Println(mdic)
+	mdic := MyDict.Dictionary{"first": "firstWord"}
+	mditn, err := mdic.Search("Second")
+
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(mditn)
+	}
 }
