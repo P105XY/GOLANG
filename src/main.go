@@ -41,3 +41,5 @@ func hitURL(url string) error {
 	}
 	return nil
 }
+
+//comp url
